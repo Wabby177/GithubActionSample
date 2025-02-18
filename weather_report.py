@@ -5,12 +5,12 @@ import json
 from bs4 import BeautifulSoup
 
 # 从测试号信息获取
-appID = os.environ.get("wx742e51d91a0af82d")
-appSecret = os.environ.get("49bdfe627f3032fbacf59edd920d1815")
+appID = os.environ.get("APP_ID")
+appSecret = os.environ.get("APP_SECRET")
 # 收信人ID即 用户列表中的微信号
-openId = os.environ.get("o8mPw7FsKFWzVvQuxs2GzqmyX-g0")
+openId = os.environ.get("OPEN_ID")
 # 天气预报模板ID
-weather_template_id = os.environ.get("C2rzwpqVBrftxwb0O0RTQatp6wnLm4LBVNjiLZnGNC0")
+weather_template_id = os.environ.get("TEMPLATE_ID")
 
 def get_weather(my_city):
     urls = ["http://www.weather.com.cn/textFC/hb.shtml",
